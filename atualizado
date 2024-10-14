@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AppClass
+{
+    // classe de análise ou de projeto
+     public class Usuario
+    {
+        // atributos
+        private Escola escola;
+
+        // propriedades
+
+        // métodos construtores
+        public Usuario()
+        {
+            Escola escola = new Escola();
+        }
+
+        // métodos de projeto
+    }
+    public class Escola // base
+    {
+        // atributos (campos)
+        private int id;
+        private string nome;
+        private string local;
+        // propriedades (métodos de acesso)
+
+        // métodos construtores
+
+        // métodos de projeto
+    }
+}
