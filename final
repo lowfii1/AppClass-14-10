@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AppClass
+{
+    // classe de análise ou de projeto
+     public class Usuario
+    {
+        // atributos
+        private Escola escola;
+
+        // propriedades
+
+        // métodos construtores
+        public Usuario() 
+        {
+            escola.Id = 10;
+            var identificador = escola.Id;
+        }
+        // métodos de projeto
+    }
+    public class Escola // base
+    {
+        // atributos (campos)
+        private int id;
+        private string nome;
+        private string local;
+        // propriedades (métodos de acesso) - encapsulamento
+        public int Id { get { return Id1; } set { Id1 = value; } }
+        public string nome { get; set; }
+        public int Id1 { get => id; set => id = value; }
+        public string Nome { get => this.nome; set => this.nome = value; }
+        public string Local { get => local; set => local = value; }
+
+        public void SetLocal(string valor) // metódo de acesso
+        {
+            Local = valor;
+        }
+        public string GetLocal() // declarando dessa forma não precisa atribuir valor. 
+        {
+            return Local;
+        }
+        // métodos construtores
+
+        // métodos de projeto
+    }
+}
